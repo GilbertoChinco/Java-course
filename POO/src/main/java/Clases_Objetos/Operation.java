@@ -10,23 +10,27 @@ public class Operation {
     //Method
     //Ask for numbers
     
-    public void sumar(int number_1, int number_2){
-        sum = number_1 + number_2;
+    public int sumar(int number_1, int number_2){
+        int sum = number_1 + number_2;
+        return sum;
     }
     
-    public void restar(int number_1, int number_2){
-        diff = number_1 - number_2;
+    public int restar(int number_1, int number_2){
+        int diff = number_1 - number_2;
+        return diff;
     }
     
-    public void multiplicar(int number_1, int number_2){
-        multiply = number_1 * number_2;
+    public int multiplicar(int number_1, int number_2){
+        int multiply = number_1 * number_2;
+        return multiply;
     }
     
-    public void dividir(int number_1, int number_2){
-      frac = number_1 / number_2;
+    public int dividir(int number_1, int number_2){
+      int frac = number_1 / number_2;
+      return frac;
     }
     
-    public void Resultados(){
+    public void Resultados(int sum, int diff, int multiply, int frac){
         System.out.println("La suma es :" + sum);
         System.out.println("La resta es :" + diff);
         System.out.println("La multplicacion es :" + multiply);
