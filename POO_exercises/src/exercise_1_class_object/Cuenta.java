@@ -26,7 +26,7 @@ public class Cuenta {
             System.out.println("No tienes fondos suficientes");
             System.out.println("La cantidad faltante para completar el pago es de: $ " + (-cantidad_final));
             cantidad_final = cantidad_inicial;
-            System.out.println("Tu cantidad de fondos totales es: $ " + cantidad_final);
+            System.out.println("Tu cantidad de fondos totalesgit st es: $ " + cantidad_final);
         }
         else{
             System.out.println("La cantidad total es: $ " + cantidad_final);
