@@ -16,5 +16,9 @@ public class Main {
         objeto_1.get_sum();
         objeto_1.get_multiply();
         objeto_1.get_results();
+        
+        Calculadora objeto_2 = new Calculadora(number_1);
+        objeto_2.set_aggregateInt(10);
+        objeto_2.get_multiply_by_int();
     }
 }
