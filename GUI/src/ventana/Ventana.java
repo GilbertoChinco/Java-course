@@ -5,10 +5,13 @@ import java.awt.Dimension;
 import java.awt.Font;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 public class Ventana extends JFrame{
     public JPanel panel;
@@ -30,7 +33,10 @@ public class Ventana extends JFrame{
         colocarPaneles();
         //colocarEtiquetas();
         //colocarBotones();
-        colocarRadioBotones();
+        //colocarRadioBotones();
+        //cajasTexto();
+        //colocarAreasTexto();
+        colocarListasDesplegables();
     }
     
     private void colocarPaneles(){
@@ -70,5 +76,27 @@ public class Ventana extends JFrame{
         ButtonGroup grupoRadioBotones = new ButtonGroup();
         grupoRadioBotones.add(radioboton1);
         grupoRadioBotones.add(radioboton2);
+    }
+    
+    private void cajasTexto(){
+        JTextField cajatexto = new JTextField();
+        cajatexto.setBounds(50, 50, 100, 30);
+        cajatexto.setText("HOLA");
+        panel.add(cajatexto);
+        System.out.println("Texto en la caja texto" + cajatexto.getText());
+    }
+    
+    private void colocarAreasTexto(){
+        JTextArea areaTexto = new JTextArea();
+        areaTexto.setBounds(20, 20, 300, 200);
+        panel.add(areaTexto);
+        
+    }
+    
+    private void colocarListasDesplegables(){
+        String [] paises = {"Preu", "Colombia", "Paraguay", "Ecuador"};
+        JComboBox listadesplegable1 = new JComboBox(paises);
+        listadesplegable1.setBounds(20, 20, 100, 30);
+        panel.add(listadesplegable1);
     }
 }
